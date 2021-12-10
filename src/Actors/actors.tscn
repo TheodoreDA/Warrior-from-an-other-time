@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://src/Actors/player.gd" type="Script" id=1]
+[ext_resource path="res://assets/Basic/PNG/Players/128x256/Blue/alienBlue_stand.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 32, 56 )
+
+[node name="player" type="KinematicBody2D"]
+collision_mask = 8
+script = ExtResource( 1 )
+gravety = 4000.0
+max_speed = Vector2( 800, 1400 )
+
+[node name="AlienBlueStand" type="Sprite" parent="."]
+position = Vector2( 0, -104 )
+scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -56 )
+shape = SubResource( 1 )
+
+[node name="view" type="Camera2D" parent="."]
+position = Vector2( 0, -64 )
+current = true
