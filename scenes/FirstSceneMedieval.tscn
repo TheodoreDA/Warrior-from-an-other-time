@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=2]
+[gd_scene load_steps=49 format=2]
 
 [ext_resource path="res://assets/Castle/medievalTile_019.png" type="Texture" id=1]
 [ext_resource path="res://assets/Basic/PNG/Backgrounds/blue_grass.png" type="Texture" id=2]
@@ -32,6 +32,7 @@
 [ext_resource path="res://objects/greenPortal.tscn" type="PackedScene" id=30]
 [ext_resource path="res://src/Actors/player.tscn" type="PackedScene" id=31]
 [ext_resource path="res://src/Actors/knight.tscn" type="PackedScene" id=32]
+[ext_resource path="res://scenes/FirstSceneMedieval.gd" type="Script" id=33]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
@@ -575,10 +576,10 @@ tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 8.5 ),
-"transitions": PoolRealArray( 1 ),
+"times": PoolRealArray( 0, 8.5 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 1,
-"values": [ false ]
+"values": [ true, false ]
 }
 tracks/4/type = "value"
 tracks/4/path = NodePath("TileMap/player:visible")
@@ -587,13 +588,14 @@ tracks/4/loop_wrap = true
 tracks/4/imported = false
 tracks/4/enabled = true
 tracks/4/keys = {
-"times": PoolRealArray( 8.5 ),
-"transitions": PoolRealArray( 1 ),
+"times": PoolRealArray( 0, 8.5 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 1,
-"values": [ false ]
+"values": [ true, false ]
 }
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource( 33 )
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 scroll_base_scale = Vector2( 1, 0.25 )
