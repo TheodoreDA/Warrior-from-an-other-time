@@ -150,7 +150,7 @@ collision_layer = 4
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 25 )
 animation = "stand still"
-frame = 6
+frame = 5
 speed_scale = 2.0
 playing = true
 
