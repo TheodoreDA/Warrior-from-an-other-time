@@ -7,8 +7,8 @@ func _input(event):
 			if get_tree().get_current_scene().get_name() == "FirstSceneMedieval":
 				get_tree().change_scene("res://scenes/SecondSceneAntiquity.tscn")
 			if get_tree().get_current_scene().get_name() == "SecondSceneAntiquity":
-				get_tree().change_scene("res://scenes/ThirdSceneAntiquity.tscn")
+				get_tree().change_scene("res://scenes/ThirdSceneIndustrial.tscn")
 			if get_tree().get_current_scene().get_name() == "ThirdSceneIndustrial":
-				get_tree().change_scene("res://scenes/FourthSceneAntiquity.tscn")
+				get_tree().change_scene("res://scenes/FourthScenePlanet.tscn")
 			if get_tree().get_current_scene().get_name() == "FourthScenePlanet":
 				get_tree().change_scene("res://scenes/MainMenu.tscn")
