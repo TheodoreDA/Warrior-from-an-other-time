@@ -5,7 +5,6 @@ func _physics_process(delta):
 		flip_h = false
 	if Input.get_action_strength("move_left"):
 		flip_h = true
-
 	if Input.get_action_strength("move_right"):
 		self.animation = "walk"
 	if Input.get_action_strength("move_left"):

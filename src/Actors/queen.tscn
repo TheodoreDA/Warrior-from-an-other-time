@@ -125,7 +125,7 @@ animations = [ {
 }, {
 "frames": [ SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ) ],
 "loop": true,
-"name": "tool use",
+"name": "attack",
 "speed": 5.0
 } ]
 
@@ -142,6 +142,7 @@ max_speed = Vector2( 800, 1400 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 16 )
 animation = "idle"
+frame = 1
 speed_scale = 2.0
 playing = true
 script = ExtResource( 4 )
