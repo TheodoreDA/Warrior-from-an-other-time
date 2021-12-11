@@ -130,7 +130,7 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
 } ]
 4/z_index = 0
 
-[node name="Node2D" type="Node2D"]
+[node name="FourthScenePlanet" type="Node2D"]
 
 [node name="Node2D" type="Node2D" parent="."]
 

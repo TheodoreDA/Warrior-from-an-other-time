@@ -527,7 +527,7 @@ points = PoolVector2Array( 64, 29.7304, 0, 65, 0, 0, 64, 0 )
 } ]
 27/z_index = 0
 
-[node name="Node2D" type="Node2D"]
+[node name="FirstSceneMedieval" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2( 0, -212 )
@@ -538,6 +538,10 @@ tile_data = PoolIntArray( -720832, 3, 0, -720831, 3, 0, -720830, 3, 0, -720829, 
 [node name="queen" parent="TileMap" instance=ExtResource( 18 )]
 position = Vector2( 902.666, 637.225 )
 
+[node name="green portal" parent="TileMap" instance=ExtResource( 30 )]
+position = Vector2( 4017, 296 )
+rotation = 3.14159
+
 [node name="enemy2" parent="TileMap" instance=ExtResource( 5 )]
 position = Vector2( 1724.85, 699.667 )
 
@@ -546,9 +550,6 @@ position = Vector2( 2271.01, 486.774 )
 
 [node name="enemy3" parent="TileMap" instance=ExtResource( 5 )]
 position = Vector2( 2887.71, 625.598 )
-
-[node name="green portal" parent="TileMap" instance=ExtResource( 30 )]
-position = Vector2( 4012.08, 251.842 )
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 scroll_base_scale = Vector2( 1, 0.25 )

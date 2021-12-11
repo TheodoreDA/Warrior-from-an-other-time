@@ -14,4 +14,3 @@ func _physics_process(delta):
 		self.animation = "idle"
 	if Input.is_action_just_released("move_right"):
 		self.animation = "idle"
-		
