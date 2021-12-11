@@ -629,13 +629,13 @@ position = Vector2( 2887.71, 625.598 )
 position = Vector2( 4012.08, 251.842 )
 
 [node name="knight" parent="TileMap" instance=ExtResource( 32 )]
-visible = false
 position = Vector2( 217.8, 626.487 )
 scale = Vector2( 0.25, 0.25 )
+script = null
 
 [node name="player" parent="TileMap" instance=ExtResource( 31 )]
-visible = false
 position = Vector2( 1692.58, 755.519 )
+script = null
 
 [node name="queen" parent="TileMap" instance=ExtResource( 18 )]
 position = Vector2( 672.313, 628.267 )
