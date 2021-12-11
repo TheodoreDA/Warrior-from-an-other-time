@@ -3,7 +3,6 @@ extends Area2D
 func _input(event):
 	if event.is_action_pressed("ui_accept"):
 		if get_overlapping_bodies().size() == 1:
-			print(get_tree().get_current_scene().get_name())
 			if get_tree().get_current_scene().get_name() == "FirstSceneMedieval":
 				get_tree().change_scene("res://scenes/SecondSceneAntiquity.tscn")
 			if get_tree().get_current_scene().get_name() == "SecondSceneAntiquity":
