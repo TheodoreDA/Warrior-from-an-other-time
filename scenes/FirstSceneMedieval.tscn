@@ -690,5 +690,4 @@ margin_left = 992.0
 margin_top = 70.0
 margin_right = 1386.0
 margin_bottom = 198.0
-
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
