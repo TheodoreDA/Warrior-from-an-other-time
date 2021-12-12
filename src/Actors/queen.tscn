@@ -143,6 +143,7 @@ max_speed = Vector2( 800, 1400 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 16 )
 animation = "idle"
+frame = 2
 speed_scale = 2.0
 playing = true
 script = ExtResource( 4 )
@@ -157,4 +158,5 @@ zoom = Vector2( 1.5, 1.5 )
 
 [node name="music" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 6 )
+volume_db = -20.0
 autoplay = true
