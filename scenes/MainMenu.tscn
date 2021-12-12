@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://assets/PlayButtonPressed.png" type="Texture" id=1]
 [ext_resource path="res://assets/Title.png" type="Texture" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://assets/MainBackground.png" type="Texture" id=5]
 [ext_resource path="res://assets/QuitButton.png" type="Texture" id=6]
 [ext_resource path="res://scenes/PlayButton.gd" type="Script" id=7]
+[ext_resource path="res://assets/Button-click-sound.wav" type="AudioStream" id=8]
 
 [node name="Menu" type="Control"]
 anchor_right = 1.0
@@ -64,5 +65,8 @@ texture_pressed = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="ButtonClickSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
 [connection signal="pressed" from="TextureRect/VBoxContainer/CenterContainer/VBoxContainer/PlayButton" to="TextureRect/VBoxContainer/CenterContainer/VBoxContainer/PlayButton" method="_on_PlayButton_pressed"]
 [connection signal="pressed" from="TextureRect/VBoxContainer/CenterContainer/VBoxContainer/QuitButton" to="TextureRect/VBoxContainer/CenterContainer/VBoxContainer/PlayButton" method="_on_QuitButton_pressed"]
