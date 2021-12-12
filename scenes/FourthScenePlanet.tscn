@@ -271,7 +271,6 @@ offset = Vector2( 0, -400 )
 position = Vector2( 322.217, 466.484 )
 
 [node name="Portal" parent="." instance=ExtResource( 3 )]
-visible = false
 position = Vector2( 3433.95, 471.645 )
 rotation = 3.14159
 
@@ -282,7 +281,6 @@ script = SubResource( 8 )
 [node name="knight" parent="." instance=ExtResource( 4 )]
 position = Vector2( 3221.18, 490.65 )
 rotation = 3.14159
-scale = Vector2( 0.225, 0.225 )
 script = null
 
 [node name="player" parent="." instance=ExtResource( 10 )]
@@ -291,7 +289,6 @@ scale = Vector2( -1, 1 )
 script = null
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
-visible = false
 margin_left = 2966.0
 margin_top = 227.0
 margin_right = 3196.0

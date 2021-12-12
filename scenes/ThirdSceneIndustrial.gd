@@ -4,8 +4,6 @@ var health = 3 setget update_bars
 
 func _ready():
 	self.health = 3
-	get_node("queen").canMove = false
-	get_node("AnimationPlayer").play("Cutscene")
 	get_node("TileMap/enemy").connect("player_spotted", self, "take_damage")
 	get_node("TileMap/enemy2").connect("player_spotted", self, "take_damage")
 	get_node("TileMap/enemy3").connect("player_spotted", self, "take_damage")
@@ -25,7 +23,3 @@ func take_damage():
 func update_bars(value):
 	health = value
 	get_node("health_bar").update_health(health)
-
-
-func _on_AnimationPlayer_animation_finished(anim_name):
-	get_node("queen").canMove = true

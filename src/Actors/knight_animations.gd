@@ -4,6 +4,7 @@ func _ready():
 	connect("animation_finished", self, "knight_on_animation_finished")
 
 func _physics_process(delta):
+	return
 	if Input.get_action_strength("move_right"):
 		flip_h = false
 	if Input.get_action_strength("move_left"):

@@ -144,7 +144,7 @@ animations = [ {
 [sub_resource type="RectangleShape2D" id=26]
 extents = Vector2( 5.5, 17.5 )
 
-[node name="Area2D" type="Area2D"]
+[node name="greenPortal" type="Area2D"]
 scale = Vector2( 4, 4 )
 collision_layer = 16
 collision_mask = 0
@@ -153,6 +153,7 @@ script = ExtResource( 2 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 25 )
 animation = "idle"
+frame = 4
 speed_scale = 2.0
 playing = true
 
