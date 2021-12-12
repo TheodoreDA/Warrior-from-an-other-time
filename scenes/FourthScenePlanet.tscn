@@ -325,7 +325,7 @@ margin_bottom = 352.061
 rect_scale = Vector2( 1.5, 1.5 )
 size_flags_stretch_ratio = 0.0
 custom_colors/default_color = Color( 0, 0, 0, 1 )
-text = "Non mais j'vous jure, y'a pas de quoi s'exiter comme ça..."
+text = "Non mais j'vous jure, y'a pas de quoi s'exciter comme ça..."
 __meta__ = {
 "_edit_use_anchors_": false
 }
